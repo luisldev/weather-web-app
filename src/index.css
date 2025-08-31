@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 200 700;
+	src: url("./assets/fonts/montserrat-v25-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 200 700;
+	src: url("./assets/fonts/open-sans-v29-latin-regular.woff2") format("woff2");
+}
+
+@theme {
+	--font-primary: "Montserrat", sans-serif;
+	--font-secondary: "Open Sans", sans-serif;
+}
