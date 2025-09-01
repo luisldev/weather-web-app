@@ -120,8 +120,8 @@ function Modal({
 	return createPortal(
 		<div
 			ref={modalRef}
-			role="dialog"
-			aria-modal="true"
+			role='dialog'
+			aria-modal='true'
 			aria-labelledby={title ? titleId : undefined}
 			aria-describedby={contentId}
 			className={backdropClasses}
@@ -135,32 +135,32 @@ function Modal({
 		>
 			<div className={modalClasses}>
 				{(title || showCloseButton) && (
-					<div className="flex flex-row w-full items-center justify-between px-2 py-1">
+					<div className='flex flex-row w-full items-center justify-between px-2 py-1'>
 						{title && (
-							<h2 id={titleId} className="text-lg font-semibold">
+							<h2 id={titleId} className='text-lg font-semibold'>
 								{title}
 							</h2>
 						)}
 						{showCloseButton && (
 							<button
-								className="p-1 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-full transition-colors duration-150 ease-in group ml-auto"
-								type="button"
+								className='p-1 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-full transition-colors duration-150 ease-in group ml-auto'
+								type='button'
 								onClick={handleClose}
-								aria-label="Cerrar modal"
+								aria-label='Cerrar modal'
 							>
-								<div className="transform group-hover:scale-110 transition-transform duration-150">
+								<div className='transform group-hover:scale-110 transition-transform duration-150'>
 									<svg
-										className="w-5 h-5 text-gray-500 dark:text-neutral-400"
-										fill="none"
-										stroke="currentColor"
-										viewBox="0 0 24 24"
+										className='w-5 h-5 text-gray-500 dark:text-neutral-400'
+										fill='none'
+										stroke='currentColor'
+										viewBox='0 0 24 24'
 									>
 										<title>Cerrar</title>
 										<path
-											strokeLinecap="round"
-											strokeLinejoin="round"
+											strokeLinecap='round'
+											strokeLinejoin='round'
 											strokeWidth={2}
-											d="M6 18L18 6M6 6l12 12"
+											d='M6 18L18 6M6 6l12 12'
 										/>
 									</svg>
 								</div>

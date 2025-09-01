@@ -1,12 +1,12 @@
-import { WEATHER_CODES_MAP } from '@/tools/WEATHER_CODES_MAP';
+import { WEATHER_CODES_MAP } from './WEATHER_CODES_MAP';
 
 export function getCondition(
-  code: number,
-  codeType: keyof typeof WEATHER_CODES_MAP
+	code: number,
+	codeType: keyof typeof WEATHER_CODES_MAP,
 ): string {
-  const codeStr = String(code);
-  const map = WEATHER_CODES_MAP[codeType];
-  return map
-    ? map[codeStr] || 'Condición desconocida'
-    : 'Tipo de código desconocido';
+	const codeStr = String(code);
+	const map = WEATHER_CODES_MAP[codeType];
+	return map
+		? map[codeStr] || 'Condición desconocida'
+		: 'Tipo de código desconocido';
 }

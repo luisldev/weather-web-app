@@ -18,7 +18,12 @@ const CACHE_EXPIRATION_MS = 15 * 60 * 1000;
  * @returns Objeto con datos del clima actual, diario y horario, además de estados de carga y error.
  */
 
-export default function useWeather({ lat, lon }: { lat: number; lon: number }) {
+interface WeatherProps {
+	lat: number | undefined;
+	lon: number | undefined;
+}
+
+export default function useWeather({ lat, lon }: WeatherProps) {
 	const [currentWeather, setCurrentWeather] = useState<Interval | undefined>(
 		undefined,
 	);
@@ -39,7 +44,7 @@ export default function useWeather({ lat, lon }: { lat: number; lon: number }) {
 	);
 
 	useEffect(() => {
-		if (!lat || !lon) {
+		if (lat === undefined || lon === undefined) {
 			return;
 		}
 		const loadWeatherData = async () => {
