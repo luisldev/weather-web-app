@@ -1,6 +1,6 @@
 import { useState } from 'react';
-
-// import WeatherSearch from './WeatherSearch';
+import Modal from '../../components/ui/Modal';
+import WeatherSearch from './WeatherSearch';
 
 function WeatherSearchContainer() {
 	const [modalIsOpen, setIsModalOpen] = useState(false);
@@ -48,10 +48,8 @@ function WeatherSearchContainer() {
 					</form>
 				</search>
 			</div>
-			{/**
-             * 
-             * 
-             * <Modal
+
+			<Modal
 				title='Buscar ciudad'
 				isOpen={modalIsOpen}
 				onClose={closeModal}
@@ -62,9 +60,6 @@ function WeatherSearchContainer() {
 			>
 				<WeatherSearch closeModal={closeModal} />
 			</Modal>
-             * 
-             * 
-             */}
 		</>
 	);
 }
