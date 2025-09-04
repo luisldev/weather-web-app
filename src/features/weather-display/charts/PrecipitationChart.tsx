@@ -118,7 +118,7 @@ function PrecipitationChart({
 	}, [data, timeTitle, graphicTitleForCloudHumidityAndProbRain]);
 
 	return (
-		<div className='w-full'>
+		<div style={{ width: '100%', height: '320px' }}>
 			<canvas ref={chartRef}></canvas>
 		</div>
 	);
