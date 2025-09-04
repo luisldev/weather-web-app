@@ -105,10 +105,9 @@ function TemperatureChart({
 	}, [data, timeTitle, graphicTitleForTempAndFeelsLike]);
 
 	return (
-		<div className='w-full'>
+		<div style={{ width: '100%', height: '320px' }}>
 			<canvas ref={chartRef}></canvas>
 		</div>
 	);
 }
-
 export default TemperatureChart;

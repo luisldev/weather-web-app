@@ -41,7 +41,7 @@ function Modal({
 
 	// Configuración de las clases de tamaño
 	const sizeClasses = {
-		sm: 'w-full md:w-full md:max-w-md',
+		sm: 'w-full md:max-w-md',
 		default: 'w-full md:w-1/2 md:max-w-xl',
 		lg: 'w-full md:w-2/3 md:max-w-2xl',
 		xl: 'w-full md:w-3/4 md:max-w-4xl',
@@ -109,7 +109,7 @@ function Modal({
 		isOpen && !isClosing ? 'bg-black/50 opacity-100' : 'bg-black/0 opacity-0'
 	}`;
 
-	const modalClasses = `relative bg-white dark:bg-neutral-900 rounded-xl shadow-xl transition-transform duration-200 ease-out p-2 w-full mx-2 ${
+	const modalClasses = `relative h-max bg-white dark:bg-neutral-900 rounded-xl shadow-xl transition-transform duration-200 ease-out p-2 ${
 		sizeClasses[size]
 	} ${
 		isOpen && !isClosing
@@ -133,7 +133,7 @@ function Modal({
 			}}
 			tabIndex={-1}
 		>
-			<div className={modalClasses}>
+			<div className={`${modalClasses}`}>
 				{(title || showCloseButton) && (
 					<div className='flex flex-row w-full items-center justify-between px-2 py-1'>
 						{title && (
