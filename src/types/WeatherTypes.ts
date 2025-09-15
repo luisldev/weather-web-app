@@ -2,7 +2,6 @@
  * Representa los valores climáticos para un intervalo de tiempo específico.
  * Nota: Algunos campos como 'weatherCodeDay' y 'weatherCodeNight' son opcionales
  * porque no están presentes en todos los timesteps (ej. 'current' o '1h').
- * Los tiempos de amanecer/atardecer/luna también pueden variar en presencia.
  */
 export interface IntervalValues {
 	cloudCover: number;

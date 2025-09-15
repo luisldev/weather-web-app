@@ -10,11 +10,11 @@ import WeatherHourly from './WeatherHourly';
 
 function WeatherContainer() {
 	const selectedCity = useSelectedCity((state) => state.selectedCity);
-
+	const time = useSelectedCity((state) => state.time);
 	const { currentWeather, dailyWeather, hourlyWeather, loading, error } =
 		useWeather({
-			lat: selectedCity?.lat,
-			lon: selectedCity?.lon,
+			selectedCity: selectedCity,
+			time: time,
 		});
 
 	if (!selectedCity) return <InitialPage />;
@@ -28,8 +28,12 @@ function WeatherContainer() {
 	}
 
 	return (
-		<section id='weather_container' className=''>
-			<WeatherHeader location={selectedCity} date={currentWeather.startTime} />
+		<section id='weather_container' className='mt-2 grow'>
+			<WeatherHeader
+				time={time}
+				location={selectedCity}
+				date={currentWeather.startTime}
+			/>
 			<WeatherCurrent currentData={currentWeather} />
 			<WeatherHourly hourlyData={hourlyWeather} />
 			<WeatherDaily dailyData={dailyWeather} />

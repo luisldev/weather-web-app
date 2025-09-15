@@ -48,7 +48,7 @@ function WeatherCardContainer({
 					iconPosition='right'
 					onClick={openModal}
 				>
-					<span className='leading-none mb-[2px]'>Ver más</span>
+					<span>Ver más</span>
 				</Button>
 			</div>
 			<div className='w-full flex flex-row gap-x-4 overflow-x-auto p-4 scrollbar scrollbar-thumb-rounded-full scrollbar-track-transparent scrollbar-thumb-neutral-300 dark:scrollbar-thumb-neutral-600'>

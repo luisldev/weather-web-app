@@ -1,4 +1,6 @@
-// Errores personalizados para la aplicación del clima
+/**
+ *  Errores personalizados para la aplicación del clima
+ */
 
 export class WeatherError extends Error {
 	constructor(message: string) {

@@ -1,3 +1,7 @@
+/**
+ * Tipo de dato para la respuesta de la API de autocompletado
+ */
+
 export interface LocationType {
 	id: number;
 	name: string;
@@ -5,4 +9,5 @@ export interface LocationType {
 	country: string;
 	lat: number;
 	lon: number;
+	url: string;
 }

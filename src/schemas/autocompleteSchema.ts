@@ -8,6 +8,7 @@ export const AutocompleteResultSchema = z.object({
 	country: z.string(),
 	lat: z.number(),
 	lon: z.number(),
+	url: z.string(),
 });
 
 // Esquema para la respuesta completa de la API, que es un array de resultados.

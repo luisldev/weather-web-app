@@ -7,6 +7,10 @@ type SelectedCityState = {
 	setSelectedCity: (city: LocationType, time: number) => void;
 };
 
+/**
+ * Gestiona la última ciudad seleccionada, junto con una marca de tiempo
+ */
+
 export const useSelectedCity = create<SelectedCityState>((set) => ({
 	selectedCity: null,
 	time: null,

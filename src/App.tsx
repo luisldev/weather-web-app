@@ -1,4 +1,5 @@
 import Header from './features/weather-display/Header';
+import Footer from './features/weather-display/pages/Footer';
 import WeatherContainer from './features/weather-display/WeatherContainer';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
 		<>
 			<Header />
 			<WeatherContainer />
+			<Footer />
 		</>
 	);
 }
