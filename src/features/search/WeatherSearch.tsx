@@ -12,8 +12,9 @@ interface Props {
 function WeatherSearch({ closeModal }: Props) {
 	const [query, setQuery] = useState('');
 	const { data, loading, error } = useAutocomplete(query);
-	const { history, addHistory } = useHistoryStore();
-	const { setSelectedCity } = useSelectedCity();
+	const history = useHistoryStore((state) => state.history);
+	const addHistory = useHistoryStore((state) => state.addHistory);
+	const setSelectedCity = useSelectedCity((state) => state.setSelectedCity);
 
 	function handleQueryInput(e: React.ChangeEvent<HTMLInputElement>) {
 		const currentValue = e.currentTarget.value;
@@ -28,20 +29,19 @@ function WeatherSearch({ closeModal }: Props) {
 
 	function handleSelect(city: LocationType) {
 		addHistory(city);
-		setSelectedCity(city);
+		setSelectedCity(city, Date.now());
 		setQuery('');
 		closeModal();
 	}
 
 	function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 		e.preventDefault();
-		// Solo si hay datos de autocompletado, procedemos.
 		if (data.length > 0) {
 			handleSelect(data[0]);
-		} else {
-			// Si no hay datos, no hacemos nada.
-			// Puedes mostrar un mensaje al usuario aquí, si lo deseas.
 		}
+		/* else {
+			***Pendiente acción si no hay datos en el autocompletado y se hace un submit con la tecla Enter
+		} */
 	}
 
 	return (

@@ -1,19 +1,23 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <script>
       document.documentElement.classList.toggle('dark',
-      localStorage.theme === 'dark' || (!('theme' in localStorage) &&window.matchMedia('(prefers-color-scheme: dark)').matches)
-  );
-</script>
+        localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      );
+    </script>
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>Web del clima</title>
   </head>
-  <body class="max-w-[1440px] min-h-dvh mx-auto p-2 dark:bg-neutral-950 dark:text-white/95 flex flex-col gap-y-2">
-    <div id="root"></div>
+
+  <body class="max-w-[1440px] mx-auto font-primary dark:bg-neutral-950 dark:text-white/95">
+    <div class="flex flex-col h-full min-h-dvh mx-auto p-2 gap-y-2" id="root">
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
+
 </html>

@@ -4,19 +4,11 @@
 	font-family: "Montserrat";
 	font-style: normal;
 	font-weight: 200 700;
-	src: url("./assets/fonts/montserrat-v25-latin-regular.woff2") format("woff2");
-}
-
-@font-face {
-	font-family: "Open Sans";
-	font-style: normal;
-	font-weight: 200 700;
-	src: url("./assets/fonts/open-sans-v29-latin-regular.woff2") format("woff2");
+	src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf") format("woff2");
 }
 
 @theme {
 	--font-primary: "Montserrat", sans-serif;
-	--font-secondary: "Open Sans", sans-serif;
 }
 
 /* Estilos comunes (Tema claro) */
@@ -71,6 +63,10 @@ body::-webkit-scrollbar-thumb {
 	grid-area: weather_hourly;
 }
 
+#footer {
+	grid-area: footer;
+}
+
 #weather_container {
 	width: 100%;
 	display: grid;
@@ -79,7 +75,8 @@ body::-webkit-scrollbar-thumb {
 	grid-template-areas:
 		"weather_header weather_header"
 		"weather_current weather_hourly"
-		"weather_current weather_daily";
+		"weather_current weather_daily"
+		"footer footer";
 	gap: 0.5rem;
 }
 
@@ -91,7 +88,8 @@ body::-webkit-scrollbar-thumb {
 			"weather_header"
 			"weather_current"
 			"weather_hourly"
-			"weather_daily";
+			"weather_daily"
+			"footer";
 	}
 }
 

@@ -23,7 +23,7 @@ function Badge({
 	...props
 }: BadgeProps) {
 	const baseStyles =
-		'w-max inline-flex items-center gap-x-1 rounded-lg sm:rounded-full text-xs font-medium';
+		'w-max inline-flex items-center gap-x-1 rounded-lg sm:rounded-full text-xs font-medium px-3 py-1.5 ';
 
 	const variants = {
 		neutral: 'bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white',
@@ -46,16 +46,14 @@ function Badge({
 		<div className={allClassNames} {...props}>
 			{onClick && (
 				<button
-					className='flex-grow text-left cursor-pointer py-1.5 pl-3 hover:opacity-80'
+					className='flex-grow cursor-pointer hover:opacity-80'
 					type='button'
 					onClick={onClick}
 				>
 					{children}
 				</button>
 			)}
-			{!onClick && (
-				<span className='py-1.5 px-3 hover:opacity-90'>{children}</span>
-			)}
+			{!onClick && <span className='hover:opacity-90'>{children}</span>}
 			{onRemove && (
 				<button
 					type='button'

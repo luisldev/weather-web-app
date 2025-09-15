@@ -23,7 +23,7 @@ function WeatherCard({ data, type }: WeatherCardProps) {
 	}
 
 	return (
-		<div className='flex flex-col items-center justify-between p-4 rounded-xl bg-neutral-100 dark:bg-neutral-800 transition-all duration-300 hover:bg-neutral-200 dark:hover:bg-neutral-700 shadow-sm min-w-36 min-h-36 flex-shrink-0'>
+		<div className='flex flex-col items-center justify-between p-4 rounded-xl bg-neutral-100 dark:bg-neutral-800 transition-all duration-300 hover:bg-neutral-200 dark:hover:bg-neutral-700 shadow-sm w-48 min-h-36 flex-shrink-0'>
 			<p className='text-sm text-neutral-600 dark:text-neutral-400 font-semibold mb-2'>
 				{timeContent}
 			</p>
