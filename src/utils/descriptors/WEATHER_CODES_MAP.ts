@@ -1,4 +1,4 @@
-import type { WeatherCodesCollection } from '../../types/WeatherCodes';
+import type { WeatherCodesCollection } from '@/types/WeatherCodes';
 
 export const WEATHER_CODES_MAP: WeatherCodesCollection = {
 	weatherCode: {

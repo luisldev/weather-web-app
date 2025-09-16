@@ -1,12 +1,12 @@
-import useWeather from '../../hooks/useWeather';
-import { useSelectedCity } from '../../stores/useSelectedCity';
-import ErrorPage from './pages/ErrorPage';
-import InitialPage from './pages/InitialPage';
-import Loader from './pages/Loader';
-import WeatherCurrent from './WeatherCurrent';
-import WeatherDaily from './WeatherDaily';
-import WeatherHeader from './WeatherHeader';
-import WeatherHourly from './WeatherHourly';
+import ErrorPage from '@/features/weather-display/pages/ErrorPage';
+import InitialPage from '@/features/weather-display/pages/InitialPage';
+import Loader from '@/features/weather-display/pages/Loader';
+import WeatherCurrent from '@/features/weather-display/WeatherCurrent';
+import WeatherDaily from '@/features/weather-display/WeatherDaily';
+import WeatherHeader from '@/features/weather-display/WeatherHeader';
+import WeatherHourly from '@/features/weather-display/WeatherHourly';
+import useWeather from '@/hooks/useWeather';
+import { useSelectedCity } from '@/stores/useSelectedCity';
 
 function WeatherContainer() {
 	const selectedCity = useSelectedCity((state) => state.selectedCity);

@@ -1,8 +1,8 @@
+import Badge from '@/components/ui/Badge';
 import Modal from '@/components/ui/Modal';
+import type { LocationType } from '@/types/LocationType';
+import { formatHours } from '@/utils/formatters/formatTime';
 import { useCallback, useState } from 'react';
-import Badge from '../../components/ui/Badge';
-import type { LocationType } from '../../types/LocationType';
-import { formatHours } from '../../utils/formatters/formatTime';
 
 interface HeaderProps {
 	location: LocationType;

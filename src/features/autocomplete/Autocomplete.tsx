@@ -1,7 +1,7 @@
-import Badge from '../../components/ui/Badge';
-import { useHistoryStore } from '../../stores/useHistoryStore';
-import type { LocationType } from '../../types/LocationType';
-import type { WeatherError } from '../../utils/errors/errors';
+import Badge from '@/components/ui/Badge';
+import { useHistoryStore } from '@/stores/useHistoryStore';
+import type { LocationType } from '@/types/LocationType';
+import type { WeatherError } from '@/utils/errors/errors';
 
 type Props = {
 	data: LocationType[];

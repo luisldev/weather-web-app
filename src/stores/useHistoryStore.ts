@@ -1,6 +1,6 @@
+import type { LocationType } from '@/types/LocationType';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
-import type { LocationType } from '../types/LocationType';
 
 type HistoryStoreState = {
 	history: LocationType[];

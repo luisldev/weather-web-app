@@ -1,6 +1,6 @@
-import type { Interval } from '../../types/WeatherTypes';
-import WeatherCard from './WeatherCard';
-import WeatherCardContainer from './WeatherCardContainer';
+import WeatherCard from '@/features/weather-display/WeatherCard';
+import WeatherCardContainer from '@/features/weather-display/WeatherCardContainer';
+import type { Interval } from '@/types/WeatherTypes';
 
 type WeatherHourlyProps = {
 	hourlyData: Interval[];

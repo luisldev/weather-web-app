@@ -1,4 +1,4 @@
-import type { Interval, Timeline } from '../../types/WeatherTypes';
+import type { Interval, Timeline } from '@/types/WeatherTypes';
 
 export default function formatCurrentWeatherResponse(
 	timelines: Timeline[],

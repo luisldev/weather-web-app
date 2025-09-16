@@ -1,12 +1,12 @@
+import fetchWeather from '@/api/fetchWeather';
+import { useWeatherStore } from '@/stores/useWeatherStore';
+import type { LocationType } from '@/types/LocationType';
+import type { Interval, TomorrowIoApiResponse } from '@/types/WeatherTypes';
+import { LocationNotFounding } from '@/utils/errors/errors';
+import formatCurrentWeatherResponse from '@/utils/formatters/formatCurrentWeatherResponse';
+import formatDailyWeatherResponse from '@/utils/formatters/formatDailyWeatherResponse';
+import formatHourlyWeatherResponse from '@/utils/formatters/formatHourlyWeatherResponse';
 import { useEffect, useState } from 'react';
-import fetchWeather from '../api/fetchWeather';
-import { useWeatherStore } from '../stores/useWeatherStore';
-import type { LocationType } from '../types/LocationType';
-import type { Interval, TomorrowIoApiResponse } from '../types/WeatherTypes';
-import { LocationNotFounding } from '../utils/errors/errors';
-import formatCurrentWeatherResponse from '../utils/formatters/formatCurrentWeatherResponse';
-import formatDailyWeatherResponse from '../utils/formatters/formatDailyWeatherResponse';
-import formatHourlyWeatherResponse from '../utils/formatters/formatHourlyWeatherResponse';
 
 // Duración de la caché en milisegundos (15 minutos)
 const CACHE_EXPIRATION_MS = 15 * 60 * 1000;

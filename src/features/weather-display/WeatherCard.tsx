@@ -1,5 +1,5 @@
-import type { Interval } from '../../types/WeatherTypes';
-import { getCondition } from '../../utils/descriptors/getCondition';
+import type { Interval } from '@/types/WeatherTypes';
+import { getCondition } from '@/utils/descriptors/getCondition';
 
 interface WeatherCardProps {
 	data: Interval;

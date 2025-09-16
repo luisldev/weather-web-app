@@ -1,11 +1,11 @@
-import type { Interval } from '../../types/WeatherTypes';
-import { getCondition } from '../../utils/descriptors/getCondition';
-import { getHumidityDescription } from '../../utils/descriptors/getHumidityDescription';
-import { getUVIndex } from '../../utils/descriptors/getUVIndex';
-import { getVisibilityDescription } from '../../utils/descriptors/getVisibilityDescription';
-import { getWindDescription } from '../../utils/descriptors/getWindDescription';
-import { formatHours } from '../../utils/formatters/formatTime';
-import WeatherCurrentItems from './WeatherCurrentItems';
+import WeatherCurrentItems from '@/features/weather-display/WeatherCurrentItems';
+import type { Interval } from '@/types/WeatherTypes';
+import { getCondition } from '@/utils/descriptors/getCondition';
+import { getHumidityDescription } from '@/utils/descriptors/getHumidityDescription';
+import { getUVIndex } from '@/utils/descriptors/getUVIndex';
+import { getVisibilityDescription } from '@/utils/descriptors/getVisibilityDescription';
+import { getWindDescription } from '@/utils/descriptors/getWindDescription';
+import { formatHours } from '@/utils/formatters/formatTime';
 
 interface WeatherCurrentProps {
 	currentData: Interval;

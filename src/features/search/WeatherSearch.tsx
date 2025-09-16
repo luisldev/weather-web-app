@@ -1,9 +1,9 @@
+import Autocomplete from '@/features/autocomplete/Autocomplete';
+import useAutocomplete from '@/hooks/useAutocomplete';
+import { useHistoryStore } from '@/stores/useHistoryStore';
+import { useSelectedCity } from '@/stores/useSelectedCity';
+import type { LocationType } from '@/types/LocationType';
 import { useState } from 'react';
-import useAutocomplete from '../../hooks/useAutocomplete';
-import { useHistoryStore } from '../../stores/useHistoryStore';
-import { useSelectedCity } from '../../stores/useSelectedCity';
-import type { LocationType } from '../../types/LocationType';
-import Autocomplete from '../autocomplete/Autocomplete';
 
 interface Props {
 	closeModal: () => void;

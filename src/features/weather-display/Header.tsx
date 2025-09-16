@@ -1,5 +1,5 @@
-import Logo from '../../components/icons/Logo';
-import WeatherSearchContainer from '../search/WeatherSearchContainer';
+import Logo from '@/components/icons/Logo';
+import WeatherSearchContainer from '@/features/search/WeatherSearchContainer';
 
 function Header() {
 	return (

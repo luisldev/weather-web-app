@@ -1,5 +1,5 @@
+import type { LocationType } from '@/types/LocationType';
 import { create } from 'zustand';
-import type { LocationType } from '../types/LocationType';
 
 type SelectedCityState = {
 	time: number | null;
