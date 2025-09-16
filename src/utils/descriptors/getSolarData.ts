@@ -1,4 +1,4 @@
-import type { DayHighlight, IntervalValues } from '../../types/WeatherTypes';
+import type { DayHighlight, IntervalValues } from '@/types/WeatherTypes';
 
 export default function getSolarData(
 	values: IntervalValues,

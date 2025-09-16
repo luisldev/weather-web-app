@@ -6,7 +6,7 @@ function Footer() {
 	return (
 		<footer
 			id='footer'
-			className='grow flex flex-col justify-end h-full w-full mt-auto mb-2 text-center text-xs text-neutral-500 dark:text-neutral-400 '
+			className='grow flex flex-col justify-end h-full w-full mt-auto mb-2 text-center text-xs text-neutral-500 dark:text-neutral-400 font-primary'
 		>
 			<p>
 				Datos del clima proporcionados por{' '}

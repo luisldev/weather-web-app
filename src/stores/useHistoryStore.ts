@@ -10,8 +10,7 @@ type HistoryStoreState = {
 };
 
 /**
- * Gestiona el historial de búsqueda
- * Limitado a 3 búsquedas
+ * Gestiona el historial de búsqueda limitado a 3 búsquedas
  */
 
 export const useHistoryStore = create<HistoryStoreState>()(

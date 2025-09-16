@@ -1,4 +1,4 @@
-import { WEATHER_CODES_MAP } from './WEATHER_CODES_MAP';
+import { WEATHER_CODES_MAP } from '@/utils/descriptors/WEATHER_CODES_MAP';
 
 export function getCondition(
 	code: number,

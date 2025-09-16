@@ -40,7 +40,7 @@ function WeatherCardContainer({
 			{...props}
 			className='bg-neutral-50 dark:bg-neutral-900 rounded-xl px-4 py-2 shadow-md w-full h-full overflow-x-auto'
 		>
-			<div className='flex flex-row items-center justify-between'>
+			<div className='flex flex-row items-center justify-between font-primary'>
 				<h3 className='text-lg font-semibold mb-2'>{title}</h3>
 				<Button
 					variant='primary'
@@ -51,7 +51,7 @@ function WeatherCardContainer({
 					<span>Ver más</span>
 				</Button>
 			</div>
-			<div className='w-full flex flex-row gap-x-4 overflow-x-auto p-4 scrollbar scrollbar-thumb-rounded-full scrollbar-track-transparent scrollbar-thumb-neutral-300 dark:scrollbar-thumb-neutral-600'>
+			<div className='w-full flex flex-row gap-x-4 overflow-x-auto p-4 scrollbar scrollbar-thumb-rounded-full scrollbar-track-transparent scrollbar-thumb-neutral-300 dark:scrollbar-thumb-neutral-600 font-secondary'>
 				{children}
 			</div>
 

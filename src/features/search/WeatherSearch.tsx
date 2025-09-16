@@ -37,7 +37,9 @@ function WeatherSearch({ closeModal }: Props) {
 	function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 		e.preventDefault();
 		if (data.length > 0) {
-			handleSelect(data[0]);
+			setTimeout(() => {
+				handleSelect(data[0]);
+			}, 500)
 		}
 		/* else {
 			***Pendiente acción si no hay datos en el autocompletado y se hace un submit con la tecla Enter

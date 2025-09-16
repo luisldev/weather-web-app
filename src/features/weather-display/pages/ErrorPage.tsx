@@ -1,4 +1,4 @@
-import ErrorPageIcon from '../../../components/icons/ErrorPageIcon';
+import ErrorPageIcon from '@/components/icons/ErrorPageIcon';
 
 function ErrorPage({ message }: { message: string }) {
 	return (
@@ -7,7 +7,7 @@ function ErrorPage({ message }: { message: string }) {
 				<ErrorPageIcon className='w-1/2' />
 			</article>
 			<article>
-				<p className='text-lg font-light text-neutral-500 dark:text-neutral-400'>
+				<p className='text-lg font-light text-neutral-500 dark:text-neutral-400 font-primary'>
 					{message}
 				</p>
 			</article>
