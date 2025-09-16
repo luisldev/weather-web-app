@@ -1,11 +1,11 @@
-import type { TomorrowIoApiResponse } from '../schemas/tomorrowIoSchema';
+import type { TomorrowIoApiResponse } from '@/schemas/tomorrowIoSchema';
 import {
 	TomorrowIoApiErrorSchema,
 	TomorrowIoApiResponseSchema,
-} from '../schemas/tomorrowIoSchema';
-import tomorrowIoErrors from '../utils/descriptors/TomorrowIoErrors';
-import { weatherFields } from '../utils/descriptors/WeatherFields';
-import { ConnectionError, WeatherError } from '../utils/errors/errors';
+} from '@/schemas/tomorrowIoSchema';
+import tomorrowIoErrors from '@/utils/descriptors/TomorrowIoErrors';
+import { weatherFields } from '@/utils/descriptors/WeatherFields';
+import { ConnectionError, WeatherError } from '@/utils/errors/errors';
 
 const API_KEY = import.meta.env.VITE_TOMORROW_WEATHER_API_KEY;
 

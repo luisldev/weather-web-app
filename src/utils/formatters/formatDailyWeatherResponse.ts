@@ -1,4 +1,4 @@
-import type { Interval, Timeline } from '../../types/WeatherTypes';
+import type { Interval, Timeline } from '@/types/WeatherTypes';
 import { formatDay } from './formatTime';
 
 export default function formatDailyWeatherResponse(

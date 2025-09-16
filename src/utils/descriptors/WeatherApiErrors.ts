@@ -5,7 +5,7 @@ import {
 	RateLimitError,
 	ServiceUnavailableError,
 	TimeoutError,
-} from '../errors/errors';
+} from '@/utils/errors/errors';
 
 export default function weatherApiErrors(status: number): Error {
 	switch (status) {

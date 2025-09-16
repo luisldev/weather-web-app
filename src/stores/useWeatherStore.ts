@@ -1,6 +1,6 @@
+import type { TomorrowIoApiResponse } from '@/types/WeatherTypes';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
-import type { TomorrowIoApiResponse } from '../types/WeatherTypes';
 
 type CachedWeather = TomorrowIoApiResponse & {
 	id: number;

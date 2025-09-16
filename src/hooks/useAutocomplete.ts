@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react';
 import {
 	type AutocompleteApiResponse,
 	AutocompleteApiResponseSchema,
-} from '../schemas/autocompleteSchema';
-import weatherApiErrors from '../utils/descriptors/WeatherApiErrors';
-import { LocationNotFounding } from '../utils/errors/errors';
+} from '@/schemas/autocompleteSchema';
+import weatherApiErrors from '@/utils/descriptors/WeatherApiErrors';
+import { LocationNotFounding } from '@/utils/errors/errors';
+import { useEffect, useState } from 'react';
 
 const AUTOCOMPLETE_API_KEY = import.meta.env.VITE_WEATHERAPI_API_KEY;
 

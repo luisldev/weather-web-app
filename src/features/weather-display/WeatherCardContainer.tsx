@@ -1,11 +1,11 @@
+import ChevronRightIcon from '@/components/icons/ChevronRightIcon';
+import Button from '@/components/ui/Button';
+import Modal from '@/components/ui/Modal';
+import PrecipitationChart from '@/features/weather-display/charts/PrecipitationChart';
+import TemperatureChart from '@/features/weather-display/charts/TemperatureChart';
+import type { Interval } from '@/types/WeatherTypes';
 import type React from 'react';
 import { useState } from 'react';
-import ChevronRightIcon from '../../components/icons/ChevronRightIcon';
-import Button from '../../components/ui/Button';
-import Modal from '../../components/ui/Modal';
-import type { Interval } from '../../types/WeatherTypes';
-import PrecipitationChart from './charts/PrecipitationChart';
-import TemperatureChart from './charts/TemperatureChart';
 
 interface WeatherCardContainerProps {
 	title: string;

@@ -1,6 +1,6 @@
+import type { Interval } from '@/types/WeatherTypes';
 import Chart from 'chart.js/auto';
 import { useEffect, useRef } from 'react';
-import type { Interval } from '../../../types/WeatherTypes';
 
 interface WeatherChartProps {
 	data: Interval[];

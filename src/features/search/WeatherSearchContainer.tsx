@@ -1,6 +1,6 @@
+import Modal from '@/components/ui/Modal';
+import WeatherSearch from '@/features/search/WeatherSearch';
 import { useCallback, useState } from 'react';
-import Modal from '../../components/ui/Modal';
-import WeatherSearch from './WeatherSearch';
 
 function WeatherSearchContainer() {
 	const [modalIsOpen, setIsModalOpen] = useState(false);

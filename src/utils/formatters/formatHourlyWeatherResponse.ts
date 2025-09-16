@@ -1,5 +1,5 @@
-import type { Interval, Timeline } from '../../types/WeatherTypes';
-import { formatHours } from './formatTime';
+import type { Interval, Timeline } from '@/types/WeatherTypes';
+import { formatHours } from '@/utils/formatters/formatTime';
 
 export default function formatHourlyWeatherResponse(
 	response: Timeline[],
