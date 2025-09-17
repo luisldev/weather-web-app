@@ -137,7 +137,7 @@ function Modal({
 				{(title || showCloseButton) && (
 					<div className='flex flex-row w-full items-center justify-between px-2 py-1'>
 						{title && (
-							<h2 id={titleId} className='text-lg font-semibold'>
+							<h2 id={titleId} className='text-lg font-semibold font-primary'>
 								{title}
 							</h2>
 						)}
@@ -170,7 +170,7 @@ function Modal({
 				)}
 				<div
 					id={contentId}
-					className={`flex-1 transition-opacity duration-300 delay-75 p-1 overflow-y-auto scrollbar scrollbar-thumb-rounded-full scrollbar-track-transparent scrollbar-thumb-neutral-300 dark:scrollbar-thumb-neutral-600 ${
+					className={`flex-1 transition-opacity duration-300 delay-75 p-1 overflow-y-auto scrollbar scrollbar-thumb-rounded-full scrollbar-track-transparent scrollbar-thumb-neutral-300 dark:scrollbar-thumb-neutral-600 font-secondary ${
 						isClosing ? 'opacity-0' : 'opacity-100'
 					} ${!title && !showCloseButton ? 'p-4' : ''}`}
 				>

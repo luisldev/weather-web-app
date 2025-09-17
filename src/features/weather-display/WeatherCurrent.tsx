@@ -32,16 +32,16 @@ function WeatherCurrent({ currentData }: WeatherCurrentProps) {
 			className='bg-neutral-50 dark:bg-neutral-900 rounded-xl px-4 pt-0 pb-4 shadow-md'
 		>
 			<header className='w-full text-center my-8'>
-				<h2 className='text-5xl font-bold'>{temperature || '-'}°</h2>
-				<p className='text-md font-medium mt-1'>
+				<h2 className='text-5xl font-bold font-primary'>{temperature || '-'}°</h2>
+				<p className='text-md font-medium mt-1 font-secondary'>
 					{getCondition(weatherCode, 'weatherCode')}
 				</p>
-				<p className='opacity-70 text-sm mt-1'>
+				<p className='opacity-70 text-sm mt-1 font-secondary'>
 					Sensación térmica: {temperatureApparent || '-'}°
 				</p>
 			</header>
 			{sunriseTime && sunsetTime && (
-				<div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
+				<div className='grid grid-cols-1 md:grid-cols-2 gap-2 font-secondary'>
 					<div className='flex flex-row lg:flex-col items-start justify-between p-3 rounded-lg bg-neutral-100 dark:bg-neutral-800'>
 						<p className='text-sm opacity-60'>Amanecer</p>
 						<div className='inline-flex items-center gap-1'>
@@ -57,7 +57,7 @@ function WeatherCurrent({ currentData }: WeatherCurrentProps) {
 					</div>
 				</div>
 			)}
-			<div className='mt-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-2'>
+			<div className='mt-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-2 font-secondary'>
 				<WeatherCurrentItems
 					title='Humedad'
 					value={humidity}

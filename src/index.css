@@ -4,11 +4,19 @@
 	font-family: "Montserrat";
 	font-style: normal;
 	font-weight: 200 700;
-	src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf") format("woff2");
+	src: url("./assets/fonts/Montserrat.ttf") format("woff2");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 200 700;
+	src: url("./assets/fonts/Roboto.ttf") format("woff2");
 }
 
 @theme {
 	--font-primary: "Montserrat", sans-serif;
+	--font-secondary: "Roboto", sans-serif;
 }
 
 /* Estilos comunes (Tema claro) */

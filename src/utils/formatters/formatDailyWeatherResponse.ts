@@ -1,5 +1,5 @@
 import type { Interval, Timeline } from '@/types/WeatherTypes';
-import { formatDay } from './formatTime';
+import { formatDay } from '@/utils/formatters/formatTime';
 
 export default function formatDailyWeatherResponse(
 	response: Timeline[],

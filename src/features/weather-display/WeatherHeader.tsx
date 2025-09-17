@@ -28,7 +28,7 @@ function WeatherHeader({ location, date, time }: HeaderProps) {
 	return (
 		<section
 			id='weather_header'
-			className='w-full inline-flex flex-row items-center justify-between'
+			className='w-full inline-flex flex-row items-center justify-between font-primary'
 		>
 			<Badge variant='primary'>
 				{location
