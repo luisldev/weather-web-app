@@ -15,7 +15,7 @@ function Autocomplete({ data, loading, error, onSelect, historyData }: Props) {
 	const { removeAllHistory } = useHistoryStore();
 	if (loading) {
 		return (
-			<div className='flex justify-center mt-4 py-4'>
+			<div className='flex justify-center mt-4 py-4 font-primary'>
 				<Badge variant='warning'>Cargando...</Badge>
 			</div>
 		);
@@ -23,7 +23,7 @@ function Autocomplete({ data, loading, error, onSelect, historyData }: Props) {
 
 	if (error) {
 		return (
-			<div className='flex justify-center mt-4 py-4'>
+			<div className='flex justify-center mt-4 py-4 font-primary'>
 				<Badge variant='danger'>{error.message}</Badge>
 			</div>
 		);
@@ -39,7 +39,7 @@ function Autocomplete({ data, loading, error, onSelect, historyData }: Props) {
 	if (!hasHistoryData && !hasAutocompleteData) {
 		return (
 			<div className='flex justify-center mt-4 py-4'>
-				<Badge variant='neutral'>
+				<Badge className='font-primary' variant='neutral'>
 					Prueba buscar alguna ciudad para obtener autocompletado.
 				</Badge>
 			</div>
@@ -51,11 +51,13 @@ function Autocomplete({ data, loading, error, onSelect, historyData }: Props) {
 			{hasHistoryData && (
 				<>
 					<div className='flex justify-between items-center px-1'>
-						<h2 className='text-xs font-semibold opacity-65'>Recientes</h2>
+						<h2 className='text-xs font-semibold opacity-65 font-primary'>
+							Recientes
+						</h2>
 						<button
 							type='button'
 							onClick={removeAllHistory}
-							className='text-xs font-medium text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 transition-colors duration-150 ease-in'
+							className='text-xs font-medium text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 transition-colors duration-150 ease-in font-primary'
 						>
 							Limpiar historial
 						</button>
@@ -66,7 +68,7 @@ function Autocomplete({ data, loading, error, onSelect, historyData }: Props) {
 								<button
 									type='button'
 									onClick={() => handleSelect(city)}
-									className='w-full text-left text-sm px-2 py-1 rounded-md flex items-center justify-between gap-x-2 font-light opacity-90 hover:opacity-100 hover:bg-neutral-200 dark:hover:bg-neutral-900 transition-colors duration-150 ease-in group'
+									className='w-full text-left text-sm px-2 py-1 rounded-md flex items-center justify-between gap-x-2 font-light opacity-90 hover:opacity-100 hover:bg-neutral-200 dark:hover:bg-neutral-900 transition-colors duration-150 ease-in group font-secondary'
 								>
 									<span className='inline-flex flex-col'>
 										<span className='font-semibold text-neutral-800 dark:text-neutral-200 group-hover:text-blue-500 group-focus-within:text-blue-500 transition-colors duration-100'>

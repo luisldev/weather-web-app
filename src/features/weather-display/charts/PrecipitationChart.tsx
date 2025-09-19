@@ -9,9 +9,7 @@ interface PrecipitationChartProps {
 }
 
 /**
- * Componente de gráfico para visualizar la nubosidad, humedad y probabilidad de lluvia.
- *
- * @param {PrecipitationChartProps} { data, timeTitle } - Los datos de pronóstico por intervalos de tiempo.
+ * Componente gráfico para visualizar la nubosidad, humedad y probabilidad de lluvia.
  */
 function PrecipitationChart({
 	data,
