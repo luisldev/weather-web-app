@@ -36,10 +36,10 @@ function WeatherSearchContainer() {
 						</div>
 						<button
 							type='button'
-							className='w-max py-1 md:py-2 outline-none ps-8 pe-4 block rounded-lg sm:text-sm bg-neutral-100 placeholder:text-neutral-400 dark:bg-neutral-800 dark:text-neutral-400 dark:placeholder-neutral-500 text-left'
+							className='w-max py-1 md:py-2 outline-none ps-8 pe-4 block rounded-lg sm:text-sm bg-neutral-100 dark:bg-neutral-800 text-left'
 							onClick={openModal}
 						>
-							<span className='text-neutral-400 dark:text-neutral-500'>
+							<span className='text-neutral-600 dark:text-neutral-400'>
 								New York, London, Tokio...
 							</span>
 						</button>

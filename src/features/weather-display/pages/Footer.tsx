@@ -1,7 +1,3 @@
-/**
- * Componente de pie de página (Footer).
- * Muestra los créditos de las APIs usadas.
- */
 function Footer() {
 	return (
 		<footer
@@ -14,7 +10,7 @@ function Footer() {
 					href='https://www.tomorrow.io/'
 					target='_blank'
 					rel='noopener noreferrer'
-					className='text-sky-600 hover:text-sky-500 dark:text-sky-400 dark:hover:text-sky-300 transition-colors duration-150'
+					className='text-sky-700 hover:text-sky-500 dark:text-sky-400  dark:hover:text-sky-300 transition-colors duration-150'
 				>
 					Tomorrow.io
 				</a>
@@ -25,7 +21,7 @@ function Footer() {
 					href='https://www.weatherapi.com/'
 					target='_blank'
 					rel='noopener noreferrer'
-					className='text-sky-600 hover:text-sky-500 dark:text-sky-400 dark:hover:text-sky-300 transition-colors duration-150'
+					className='text-sky-700 hover:text-sky-500 dark:text-sky-400  dark:hover:text-sky-300 transition-colors duration-150'
 				>
 					WeatherAPI
 				</a>

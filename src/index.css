@@ -19,44 +19,7 @@
 	--font-secondary: "Roboto", sans-serif;
 }
 
-/* Estilos comunes (Tema claro) */
-body {
-	scrollbar-width: thin;
-	scrollbar-color: #d1d5db transparent;
-}
-
-/* Estilos para navegadores WebKit (Chrome, Safari, Edge) */
-body::-webkit-scrollbar {
-	width: 12px;
-}
-/* Estilos para el scrollbar */
-:root {
-	--scroll-thumb-light: #d1d5db; /* neutral-300 */
-	--scroll-track-light: #f9fafb; /* neutral-50 */
-}
-
-.dark {
-	--scroll-thumb-dark: #525252; /* neutral-600 */
-	--scroll-track-dark: #171717; /* neutral-900 */
-}
-
-body {
-	scrollbar-color: var(--scroll-thumb-light) transparent;
-}
-
-body::-webkit-scrollbar-thumb {
-	background-color: var(--scroll-thumb-light);
-	border: 3px solid var(--scroll-track-light);
-}
-
-.dark body {
-	scrollbar-color: var(--scroll-thumb-dark) transparent;
-}
-
-.dark body::-webkit-scrollbar-thumb {
-	background-color: var(--scroll-thumb-dark);
-	border: 3px solid var(--scroll-track-dark);
-}
+@plugin 'tailwind-scrollbar';
 
 #weather_header {
 	grid-area: weather_header;

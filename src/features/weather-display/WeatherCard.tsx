@@ -30,7 +30,7 @@ function WeatherCard({ data, type }: WeatherCardProps) {
 			<p className='text-3xl font-bold text-neutral-900 dark:text-white/90 mb-2'>
 				{temperatureContent}°
 			</p>
-			<p className='text-sm text-center text-neutral-500 dark:text-neutral-300 font-medium'>
+			<p className='text-sm text-center text-neutral-600 dark:text-neutral-300 font-medium'>
 				{conditionContent}
 			</p>
 		</div>

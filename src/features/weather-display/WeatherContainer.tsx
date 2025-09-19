@@ -28,7 +28,7 @@ function WeatherContainer() {
 	}
 
 	return (
-		<section id='weather_container' className='mt-2 grow'>
+		<section id='weather_container' className='mt-2'>
 			<WeatherHeader
 				time={time}
 				location={selectedCity}

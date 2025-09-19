@@ -1,69 +1,24 @@
-# React + TypeScript + Vite
+# Weather web app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto web para mostrar el clima de cualquier ciudad del mundo. Usa React para la interactividad, Zustand para la gestión de estados globales, TailwindCSS para el estilado, Vite como empaquetador y Biome como formateador
 
-Currently, two official plugins are available:
+## Clonar el proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Dado que no es necesario contar con todo el histórico de versiones, clona este proyecto de la siguiente manera
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```sh
+git clone https://github.com/luisldev/weather-web-app.git --depth=1
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ¿Qué necesito para usar este proyecto en local?
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### API KEYs
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Necesitas crear API KEYs personales para usar las funcionalidades críticas de este proyecto, para ello, crearás una cuenta en [Tomorrow.io](https://www.tomorrow.io/) y generarás una API KEY.
+  Harás lo mismo en [WeatherAPI](https://www.weatherapi.com/)
+
+Necesitas crear un archivo .env en la raíz del proyecto (junto a index.html) con el siguiente contenido:
+``` txt
+VITE_TOMORROW_WEATHER_API_KEY=TU_API_KEY
+VITE_WEATHERAPI_API_KEY=TU_API_KEY
 ```

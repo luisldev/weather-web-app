@@ -9,9 +9,7 @@ interface WeatherChartProps {
 }
 
 /**
- * Componente de gráfico que usa Chart.js directamente para visualizar datos de temperatura y sensación térmica.
- *
- * @param {WeatherChartProps} { data, timeTitle } - Los datos de pronóstico por intervalos de tiempo.
+ * Componente gráfico para visualizar la temperatura y sensación térmica.
  */
 function TemperatureChart({
 	data,
