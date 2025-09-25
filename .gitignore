@@ -32,3 +32,5 @@ dist-ssr
 
 # Guides and context
 guides
+.vercel
+.env*.local
