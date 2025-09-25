@@ -17,8 +17,8 @@ git clone https://github.com/luisldev/weather-web-app.git --depth=1
 Necesitas crear API KEYs personales para usar las funcionalidades críticas de este proyecto, para ello, crearás una cuenta en [Tomorrow.io](https://www.tomorrow.io/) y generarás una API KEY.
   Harás lo mismo en [WeatherAPI](https://www.weatherapi.com/)
 
-Necesitas crear un archivo .env en la raíz del proyecto (junto a index.html) con el siguiente contenido:
+Necesitas crear un archivo .env.local en la raíz del proyecto (junto a index.html) con el siguiente contenido:
 ``` txt
-VITE_TOMORROW_WEATHER_API_KEY=TU_API_KEY
-VITE_WEATHERAPI_API_KEY=TU_API_KEY
+TOMORROW_IO_API_KEY=TU_API_KEY
+WEATHERAPI_API_KEY=TU_API_KEY
 ```

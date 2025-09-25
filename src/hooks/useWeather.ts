@@ -1,4 +1,4 @@
-import fetchWeather from '@/api/fetchWeather';
+import fetchWeather from '@/fetch/fetchWeather';
 import { useWeatherStore } from '@/stores/useWeatherStore';
 import type { LocationType } from '@/types/LocationType';
 import type { Interval, TomorrowIoApiResponse } from '@/types/WeatherTypes';
@@ -15,6 +15,13 @@ interface CustomHookProps {
 	selectedCity: LocationType | null;
 	time: number | null;
 }
+
+/**
+ * Hook para manejar la lógica de obtenciónd e datos del clima
+ * @param selectedCity Objeto que contiene las coordenadas geográficas que busca el usuario
+ * @param time Marca de tiempo del elemento buscado
+ * @returns Información meteorológica para mostrar en UI, debidamente formateada y filtrada
+ */
 
 export default function useWeather({ selectedCity, time }: CustomHookProps) {
 	const [currentWeather, setCurrentWeather] = useState<Interval | undefined>(
@@ -37,17 +44,15 @@ export default function useWeather({ selectedCity, time }: CustomHookProps) {
 
 	useEffect(() => {
 		async function loadWeatherData() {
-			if (!selectedCity || !time) {
-				setLoading(false);
-				setError(null);
-				setCurrentWeather(undefined);
-				setDailyWeather(undefined);
-				setHourlyWeather(undefined);
-				return;
-			}
 			setLoading(true);
 			setError(null);
 			setTimeInfo(null);
+			setCurrentWeather(undefined);
+			setDailyWeather(undefined);
+			setHourlyWeather(undefined);
+			if (!selectedCity || !time) {
+				return;
+			}
 
 			const cachedData = weatherData.find(
 				(item) => item.id === selectedCity.id,
@@ -59,7 +64,6 @@ export default function useWeather({ selectedCity, time }: CustomHookProps) {
 						'La ciudad seleccionada no tiene coordenadas válidas',
 					),
 				);
-				setLoading(false);
 				return;
 			}
 			const isCacheExpired =
@@ -81,8 +85,6 @@ export default function useWeather({ selectedCity, time }: CustomHookProps) {
 					setWeatherData(apiResponse, selectedCity.id);
 				} catch (err) {
 					setError(err as Error);
-				} finally {
-					setLoading(false);
 				}
 			}
 
