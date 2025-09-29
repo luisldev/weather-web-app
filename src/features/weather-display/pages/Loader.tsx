@@ -1,6 +1,6 @@
 function Loader() {
 	return (
-		<div className='min-h-[70vh] flex flex-col items-center justify-center'>
+		<div className='w-full grow flex flex-col items-center justify-center'>
 			<div className='sk-circle'>
 				<div className='sk-circle1 sk-child'></div>
 				<div className='sk-circle2 sk-child'></div>

@@ -2,10 +2,10 @@ function Footer() {
 	return (
 		<footer
 			id='footer'
-			className='grow flex flex-col justify-end h-full w-full mt-auto mb-2 text-center text-xs text-neutral-500 dark:text-neutral-400 font-primary'
+			className='flex flex-col justify-end h-full w-full mt-auto text-center text-xs text-neutral-500 dark:text-neutral-400 font-primary'
 		>
 			<p>
-				Datos del clima proporcionados por{' '}
+				Powered by{' '}
 				<a
 					href='https://www.tomorrow.io/'
 					target='_blank'
@@ -16,7 +16,7 @@ function Footer() {
 				</a>
 			</p>
 			<p>
-				Autocompletado de ubicaciones por{' '}
+				Powered by{' '}
 				<a
 					href='https://www.weatherapi.com/'
 					target='_blank'
@@ -26,7 +26,6 @@ function Footer() {
 					WeatherAPI
 				</a>
 			</p>
-			<p className='mt-2'>Hecho con ❤️ por Luis López</p>
 		</footer>
 	);
 }
