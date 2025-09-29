@@ -4,7 +4,9 @@ import WeatherSearchContainer from '@/features/search/WeatherSearchContainer';
 function Header() {
 	return (
 		<header className='w-full flex flex-row items-center justify-between'>
-			<Logo />
+			<a href='/'>
+				<Logo />
+			</a>
 			<WeatherSearchContainer />
 		</header>
 	);

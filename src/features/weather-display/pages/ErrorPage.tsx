@@ -2,9 +2,9 @@ import ErrorPageIcon from '@/components/icons/ErrorPageIcon';
 
 function ErrorPage({ message }: { message: string }) {
 	return (
-		<section>
-			<article className='mx-auto'>
-				<ErrorPageIcon className='w-1/2' />
+		<section className='w-full grow flex flex-col items-center justify-center gap-y-8'>
+			<article>
+				<ErrorPageIcon className='w-full' />
 			</article>
 			<article>
 				<p className='text-lg font-light text-neutral-500 dark:text-neutral-400 font-primary'>
