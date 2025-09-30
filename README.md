@@ -1,5 +1,11 @@
 # Weather web app
 
+<div align="center">
+<a href="https://weather-web-app-flame.vercel.app/">
+<img src="./public/project.png">
+</a>
+</div>
+
 Este es un proyecto web para mostrar el clima de cualquier ciudad del mundo. Usa React para la interactividad, Zustand para la gestión de estados globales, TailwindCSS para el estilado, Vite como empaquetador y Biome como formateador
 
 ## Clonar el proyecto
